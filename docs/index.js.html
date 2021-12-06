@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Adding favicon -->
+    
+
+    <!-- Adding meta -->
+    
+
+    <!-- Adding external script-->
+    
+
+    <!-- Adding external style-->
+    
+
+    <!-- Adding scripts-->
+    
+
+    <!-- Adding style-->
+    
+
+    <!-- Adding overlay script-->
+    
+
+    <!-- Adding overlay style-->
+    
+
+
+    <title>
+      index.js
+    </title>
+
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/third-party/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/third-party/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/reset.css">
+    <link type="text/css" rel="stylesheet" href="styles/clean-jsdoc-theme-base.css">
+    <link type="text/css" rel="stylesheet" href="styles/clean-jsdoc-theme-dark.css">
+    
+    <svg aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    style="display:none">
+    <defs>
+        <symbol id="copy-icon" viewbox="0 0 488.3 488.3">
+            <g>
+                <path
+                    d="M314.25,85.4h-227c-21.3,0-38.6,17.3-38.6,38.6v325.7c0,21.3,17.3,38.6,38.6,38.6h227c21.3,0,38.6-17.3,38.6-38.6V124    C352.75,102.7,335.45,85.4,314.25,85.4z M325.75,449.6c0,6.4-5.2,11.6-11.6,11.6h-227c-6.4,0-11.6-5.2-11.6-11.6V124    c0-6.4,5.2-11.6,11.6-11.6h227c6.4,0,11.6,5.2,11.6,11.6V449.6z" />
+                <path
+                    d="M401.05,0h-227c-21.3,0-38.6,17.3-38.6,38.6c0,7.5,6,13.5,13.5,13.5s13.5-6,13.5-13.5c0-6.4,5.2-11.6,11.6-11.6h227    c6.4,0,11.6,5.2,11.6,11.6v325.7c0,6.4-5.2,11.6-11.6,11.6c-7.5,0-13.5,6-13.5,13.5s6,13.5,13.5,13.5c21.3,0,38.6-17.3,38.6-38.6    V38.6C439.65,17.3,422.35,0,401.05,0z" />
+            </g>
+        </symbol>
+        <symbol id='search-icon' viewBox="0 0 512 512">
+            <g>
+                <g>
+                    <path
+                        d="M225.474,0C101.151,0,0,101.151,0,225.474c0,124.33,101.151,225.474,225.474,225.474    c124.33,0,225.474-101.144,225.474-225.474C450.948,101.151,349.804,0,225.474,0z M225.474,409.323    c-101.373,0-183.848-82.475-183.848-183.848S124.101,41.626,225.474,41.626s183.848,82.475,183.848,183.848    S326.847,409.323,225.474,409.323z" />
+                </g>
+            </g>
+            <g>
+                <g>
+                    <path
+                        d="M505.902,476.472L386.574,357.144c-8.131-8.131-21.299-8.131-29.43,0c-8.131,8.124-8.131,21.306,0,29.43l119.328,119.328    c4.065,4.065,9.387,6.098,14.715,6.098c5.321,0,10.649-2.033,14.715-6.098C514.033,497.778,514.033,484.596,505.902,476.472z" />
+                </g>
+            </g>
+        </symbol>
+        <symbol id="down-icon" viewBox="0 0 16 16">
+            <path 
+                fill-rule="evenodd" 
+                clip-rule="evenodd" 
+                d="M12.7803 6.21967C13.0732 6.51256 13.0732 6.98744 12.7803 7.28033L8.53033 11.5303C8.23744 11.8232 7.76256 11.8232 7.46967 11.5303L3.21967 7.28033C2.92678 6.98744 2.92678 6.51256 3.21967 6.21967C3.51256 5.92678 3.98744 5.92678 4.28033 6.21967L8 9.93934L11.7197 6.21967C12.0126 5.92678 12.4874 5.92678 12.7803 6.21967Z"
+            >
+            </path>
+        </symbol>
+    </defs>
+</svg>
+  </head>
+
+  <body>
+
+    <nav class="navbar" id="navbar">
+      <div class="navbar-heading" id="navbar-heading"><a href="index.html"><h2 class="navbar-heading-text">Home</h2></a></div><div class="search-box" id="search-box"><div class="search-box-input-container"><input class="search-box-input" type="text" placeholder="Search..." id="search-box-input" /><svg class="search-icon" alt="search-icon"><use xlink:href="#search-icon"></use></svg></div><div class="search-item-container" id="search-item-container"><ul class="search-item-ul" id="search-item-ul"></ul></div></div><div class="sidebar-main-content" id="sidebar-main-content"><div class="accordion collapsed" id="8539485" > <h3 class="accordion-heading">Classes<svg><use xlink:href="#down-icon"></use></svg></h3><ul class="accordion-content"><li class="accordion collapsed child" id=5781418><div class="accordion-heading child"><a href="MinRand.html">MinRand</a><svg><use xlink:href="#down-icon"></use></svg></div><ul class='methods accordion-content'><li data-type='method'><a href="MinRand.html#addDatasetPoint">addDatasetPoint</a></li><li data-type='method'><a href="MinRand.html#addUsedDataPoint">addUsedDataPoint</a></li><li data-type='method'><a href="MinRand.html#addUsedDataPointKey">addUsedDataPointKey</a></li><li data-type='method'><a href="MinRand.html#getDataset">getDataset</a></li><li data-type='method'><a href="MinRand.html#getEventEmitter">getEventEmitter</a></li><li data-type='method'><a href="MinRand.html#getRandomDataPoint">getRandomDataPoint</a></li><li data-type='method'><a href="MinRand.html#getUsedDataPointArray">getUsedDataPointArray</a></li><li data-type='method'><a href="MinRand.html#getUsedDataPoints">getUsedDataPoints</a></li><li data-type='method'><a href="MinRand.html#getUsedResetPercentage">getUsedResetPercentage</a></li><li data-type='method'><a href="MinRand.html#removeDatasetPoint">removeDatasetPoint</a></li><li data-type='method'><a href="MinRand.html#removeUsedDataPointKey">removeUsedDataPointKey</a></li><li data-type='method'><a href="MinRand.html#setDataset">setDataset</a></li><li data-type='method'><a href="MinRand.html#setUsedDataPointArray">setUsedDataPointArray</a></li><li data-type='method'><a href="MinRand.html#setUsedResetPercentage">setUsedResetPercentage</a></li></ul></li></ul> </div><div class="accordion collapsed" id="8845024" > <h3 class="accordion-heading">Events<svg><use xlink:href="#down-icon"></use></svg></h3><ul class="accordion-content"><li class="accordion-list" id=""><a href="MinRand.html#event:reset">reset</a></li></ul> </div>
+      
+
+    </nav>
+    <div class="navbar-ham" id="navbar-ham">
+      <div>
+        <div class="first"></div>
+        <div class="second"></div>
+        <div class="third"></div>
+      </div>
+    </div>
+
+    <div id="main" class="main-content">
+      
+      <h1 id='page-title' class="page-title">
+        index.js
+      </h1>
+      
+
+      
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>const { EventEmitter } = require('events');
+const ExistsError = require('./errors/ExistsError');
+const NotExistsError = require('./errors/NotExistsError');
+
+class MinRand {
+	/**
+	 * Creates a new MinRand instance
+	 * @param {Array} dataset An array containing the dataset
+	 * @param {Object} [usedDataPoints={}] A key-value object containing the arrays of used datapoints. Converted to a Map internally.
+	 * @throws {TypeError}
+	 */
+	constructor(dataset, usedDataPoints = {}) {
+		if (!Array.isArray(dataset)) {
+			throw new TypeError('Dataset must be an array');
+		}
+
+		if (!(typeof usedDataPoints === 'object' &amp;&amp; !Array.isArray(usedDataPoints))) {
+			throw new TypeError('Used data points must be an object');
+		}
+
+		this.dataset = dataset;
+		this.usedDataPoints = new Map(Object.entries(usedDataPoints));
+
+		this.usedResetPercentage = 0.9;
+		this.eventEmitter = new EventEmitter();
+	}
+
+	/**
+	 * Returns the EventEmitter
+	 * @returns {EventEmitter} The EventEmitter
+	 */
+	getEventEmitter() {
+		return this.eventEmitter;
+	}
+
+	/**
+	 * Returns the dataset
+	 * @returns {Array} An array containing the dataset
+	 */
+	getDataset() {
+		return this.dataset;
+	}
+
+	/**
+	 * Sets the dataset
+	 * @param {Array} dataset An array containing the dataset
+	 * @throws {TypeError}
+	 */
+	setDataset(dataset) {
+		if (!Array.isArray(dataset)) {
+			throw new TypeError('Dataset must be an array');
+		}
+
+		this.dataset = dataset;
+	}
+
+	/**
+	 * Returns the usage percentage at which the first half of the used datapoint store will be removed
+	 * @returns {double} The percentage in decimal form
+	 */
+	getUsedResetPercentage() {
+		return this.usedResetPercentage;
+	}
+
+	/**
+	 * Sets the usage percentage at which the first half of the used datapoint store will be removed
+	 * @param {double} percentage A percentage in decimal form between 0.01 and 0.99 (inclusive)
+	 * @throws {TypeError}
+	 * @throws {RangeError}
+	 */
+	setUsedResetPercentage(percentage) {
+		if (typeof percentage !== 'number' || !percentage.toString().match(/^[0-9]+(?:\.[0-9]+)?$/)) {
+			throw new TypeError('Percentage must be numerical');
+		}
+
+		if (percentage &lt; 0.01 || percentage > 0.99) {
+			throw new RangeError('Percentage must be between 0.01 and 0.99 (inclusive)');
+		}
+
+		this.usedResetPercentage = percentage;
+	}
+
+	/**
+	 * Removes a value from the dataset array, and all used datapoint arrays
+	 * @param {*} value The value to remove
+	 */
+	removeDatasetPoint(value) {
+		this.dataset = this.dataset.filter(e => e !== value);
+
+		this.usedDataPoints.forEach((v, k) => {
+			var _v = v.filter(e => e !== value);
+			this.usedDataPoints.set(k, _v);
+		});
+	}
+
+	/**
+	 * Adds a value to the dataset array
+	 * @param {*} value The value to add
+	 */
+	addDatasetPoint(value) {
+		this.dataset.push(value);
+	}
+
+	/**
+	 * Returns the used data points map
+	 * @returns {Map} The used data points map
+	 */
+	getUsedDataPoints() {
+		return this.usedDataPoints;
+	}
+
+	/**
+	 * Gets the used datapoints for the specified key
+	 * @param {*} key The key
+	 * @returns {Array|undefined} An array of used datapoints for this key. Undefined if it does not exist
+	 */
+	getUsedDataPointArray(key) {
+		return this.usedDataPoints.get(key);
+	}
+
+	/**
+	 * Sets the used datapoints for the specified key
+	 * @param {*} key The key
+	 * @param {*} array The array of datapoints
+	 * @throws {TypeError}
+	 */
+	setUsedDataPointArray(key, array) {
+		if (!Array.isArray(array)) {
+			throw new TypeError('Dataset must be an array');
+		}
+
+		this.usedDataPoints.set(key, array);
+	}
+
+	/**
+	 * Adds a used datapoint to a key
+	 * @param {*} key The key
+	 * @param {*} datapoint The datapoint to add
+	 * @throws {NotExistsError}
+	 * @throws {ExistsError}
+	 */
+	addUsedDataPoint(key, datapoint) {
+		var _dataPoints = this.usedDataPoints.get(key);
+
+		if (!_dataPoints) {
+			throw new NotExistsError();
+		}
+
+		if (!this.dataset.includes(datapoint)) {
+			throw new NotExistsError('That datapoint does not exist');
+		}
+
+		if (_dataPoints.includes(datapoint)) {
+			throw new ExistsError();
+		}
+
+		_dataPoints.push(datapoint);
+	}
+
+	/**
+	 * Adds an empty used data point array for the specified key
+	 * @param {*} key The key
+	 * @param {boolean} [force=false] Whether to override an existing key
+	 * @throws {ExistsError} An error thrown if the key already exists
+	 */
+	addUsedDataPointKey(key, force = false) {
+		if (!force &amp;&amp; this.usedDataPoints.has(key)) {
+			throw new ExistsError();
+		}
+
+		this.usedDataPoints.set(key, []);
+	}
+
+	/**
+	 * Removes a used datapoint key
+	 * @param {*} key The key
+	 * @throws {NotExistsError}
+	 */
+	removeUsedDataPointKey(key) {
+		if (!this.usedDataPoints.has(key)) {
+			throw new NotExistsError();
+		}
+
+		this.usedDataPoints.delete(key);
+	}
+
+	/**
+	 * Removes the first half of the used datapoints for the specified key, if needed
+	 * @param {*} key The key
+	 * @returns {boolean} Whether the reset occurred
+	 * @private
+	 */
+	_resetIfNeeded(key) {
+		if (!this.usedDataPoints.has(key)) {
+			throw new NotExistsError();
+		}
+
+		var _thisUDP = this.usedDataPoints.get(key);
+
+		if (this.dataset.length > 0) {
+			if (_thisUDP.length >= Math.floor(this.dataset.length * this.usedResetPercentage)) {
+				var _halfLength = Math.ceil(_thisUDP.length / 2);
+				//console.log(`${_thisUDP.length} datapoints used. Clearing first ${_halfLength} datapoints from used datapoints array`);
+				var _thisUDPRight = _thisUDP.slice(_halfLength);
+				this.usedDataPoints.set(key, _thisUDPRight);
+
+				return true;
+			}
+		}
+
+		return false;
+	}
+
+	/**
+	 * Gets a random datapoint not in the used datapoint store specified by key,
+	 * and adds this to the used datapoint array for the key
+	 * @param {*} key The key
+	 * @returns {*} The random datapoint
+	 * @fires MinRand#reset
+	 * @throws {NotExistsError}
+	 */
+	getRandomDataPoint(key) {
+		if (!this.usedDataPoints.has(key)) {
+			throw new NotExistsError();
+		}
+
+		if (this._resetIfNeeded(key)) {
+			/**
+			 * The reset event fires when the first half of the used datapoints for the specified key is removed
+			 * @event MinRand#reset
+			 * @type {object}
+			 * @property {*} key The key that was reset
+			 */
+			this.eventEmitter.emit('reset', {
+				key
+			});
+		}
+
+		var randArr = this.dataset.filter(e => !this.usedDataPoints.get(key).includes(e));
+		var randDataPoint = randArr[Math.floor(Math.random() * randArr.length)];
+
+		this.usedDataPoints.get(key).push(randDataPoint);
+
+		return randDataPoint;
+	}
+}
+
+module.exports = MinRand;</code></pre>
+        </article>
+    </section>
+
+
+
+
+    </div>
+
+    <footer class="footer" id="footer">
+      
+    </footer>
+
+    <script src="scripts/third-party/prettify.js"></script>
+    <script src="scripts/third-party/lang-css.js"></script>
+    <script type="text/javascript" src="scripts/misc.js"></script>
+
+    <script>prettyPrint();</script>
+    <script src="scripts/linenumber.js"></script>
+    <script src="scripts/fix-code-block.js"></script>
+    <script src="scripts/fix-navbar.js"></script>
+    
+      <script src="scripts/search.js"></script>
+      <script src="scripts/third-party/fuse.js"></script>
+      <script>
+        var list = [{"title":"MinRand","link":"<a href=\"MinRand.html\">MinRand</a>"},{"title":"MinRand#addDatasetPoint","link":"<a href=\"MinRand.html#addDatasetPoint\">MinRand &rtrif; addDatasetPoint</a>"},{"title":"MinRand#addUsedDataPoint","link":"<a href=\"MinRand.html#addUsedDataPoint\">MinRand &rtrif; addUsedDataPoint</a>"},{"title":"MinRand#addUsedDataPointKey","link":"<a href=\"MinRand.html#addUsedDataPointKey\">MinRand &rtrif; addUsedDataPointKey</a>"},{"title":"MinRand#getDataset","link":"<a href=\"MinRand.html#getDataset\">MinRand &rtrif; getDataset</a>"},{"title":"MinRand#getEventEmitter","link":"<a href=\"MinRand.html#getEventEmitter\">MinRand &rtrif; getEventEmitter</a>"},{"title":"MinRand#getRandomDataPoint","link":"<a href=\"MinRand.html#getRandomDataPoint\">MinRand &rtrif; getRandomDataPoint</a>"},{"title":"MinRand#getUsedDataPointArray","link":"<a href=\"MinRand.html#getUsedDataPointArray\">MinRand &rtrif; getUsedDataPointArray</a>"},{"title":"MinRand#getUsedDataPoints","link":"<a href=\"MinRand.html#getUsedDataPoints\">MinRand &rtrif; getUsedDataPoints</a>"},{"title":"MinRand#getUsedResetPercentage","link":"<a href=\"MinRand.html#getUsedResetPercentage\">MinRand &rtrif; getUsedResetPercentage</a>"},{"title":"MinRand#removeDatasetPoint","link":"<a href=\"MinRand.html#removeDatasetPoint\">MinRand &rtrif; removeDatasetPoint</a>"},{"title":"MinRand#removeUsedDataPointKey","link":"<a href=\"MinRand.html#removeUsedDataPointKey\">MinRand &rtrif; removeUsedDataPointKey</a>"},{"title":"MinRand#setDataset","link":"<a href=\"MinRand.html#setDataset\">MinRand &rtrif; setDataset</a>"},{"title":"MinRand#setUsedDataPointArray","link":"<a href=\"MinRand.html#setUsedDataPointArray\">MinRand &rtrif; setUsedDataPointArray</a>"},{"title":"MinRand#setUsedResetPercentage","link":"<a href=\"MinRand.html#setUsedResetPercentage\">MinRand &rtrif; setUsedResetPercentage</a>"},{"title":"reset","link":"<a href=\"MinRand.html#event:reset\">reset</a>"}];
+        var options = 
+          setupSearch(list, options)
+      </script>
+    
+
+    
+
+    
+
+    
+
+    
+
+
+  </body>
+
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "minrand",
+  "version": "0.0.1",
+  "description": "MinRand is a randomness algorithm that reduces the number of repeated randomly selected datapoints from a dataset",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "create-docs": "jsdoc index.js -d docs --configure jsdoc.json"
+  },
+  "author": "TrueWinter",
+  "license": "MIT",
+  "devDependencies": {
+    "clean-jsdoc-theme": "^3.3.1",
+    "jest": "^27.4.3",
+    "jsdoc": "^3.6.7"
+  }
+}
