@@ -46,6 +46,8 @@ minRand.addUsedDataPointKey('user1');
 var rand = minRand.getRandomDataPoint('user1');
 ```
 
+If you don't need the key-value system, just assign a key that's used for all data.
+
 For more information, check the [docs](https://minrand.truewinter.dev).
 
 ## Important
