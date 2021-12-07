@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "create-docs": "jsdoc index.js -d docs --configure jsdoc.json"
+    "create-docs": "jsdoc . -r -d docs --configure jsdoc.json"
   },
   "author": "TrueWinter",
   "license": "MIT",
