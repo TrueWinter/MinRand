@@ -6,7 +6,7 @@ I've separated the algorithm from the bot and made it open source so that it can
 
 ![Results](https://cdn.truewinter.dev/i/22fbb5.png)
 
-![Results](https://cdn.truewinter.dev/i/c4837f.png)
+![Results](https://cdn.truewinter.dev/i/84003f.png)
 
 # Usage
 
