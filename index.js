@@ -151,7 +151,7 @@ class MinRand {
 		}
 
 		if (_dataPoints.includes(datapoint)) {
-			throw new ExistsError();
+			throw new ExistsError('That datapoint already exists');
 		}
 
 		_dataPoints.push(datapoint);

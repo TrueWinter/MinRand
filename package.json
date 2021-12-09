@@ -1,6 +1,6 @@
 {
   "name": "minrand",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "MinRand is a randomness algorithm that reduces the number of repeated randomly selected datapoints from a dataset",
   "main": "index.js",
   "scripts": {
