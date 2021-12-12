@@ -191,10 +191,6 @@ class MinRand {
 	 * @private
 	 */
 	_resetIfNeeded(key) {
-		if (!this.usedDataPoints.has(key)) {
-			throw new NotExistsError();
-		}
-
 		var _thisUDP = this.usedDataPoints.get(key);
 
 		if (this.dataset.length > 0) {
@@ -236,7 +232,25 @@ class MinRand {
 			});
 		}
 
-		var randArr = this.dataset.filter(e => !this.usedDataPoints.get(key).includes(e));
+		// This was originally done using Array.prototype.filter(),
+		// but for a native function, I expected it to be a lot faster.
+		// The code below seems to be the fastest filtering algorithm.
+		// Speed of getting 100000 random values:
+		// Array.prototype.filter: 834ms
+		// This code: 477ms
+		// A custom C++ filtering algorithm was implemented as a test,
+		// but due to my lack of C++ knowledge, took 1954ms to complete
+		// and was therefore removed.
+		var udpMap = this.usedDataPoints.get(key);
+		var udpSet = new Set(udpMap);
+		var randArr = [];
+		for (var i = 0; i < this.dataset.length; i++) {
+			// Array.prototype.includes() is slow (>1000ms for this test). Using a set is much faster.
+			if (!udpSet.has(this.dataset[i])) {
+				randArr.push(this.dataset[i]);
+			}
+		}
+
 		var randDataPoint = randArr[Math.floor(Math.random() * randArr.length)];
 
 		this.usedDataPoints.get(key).push(randDataPoint);

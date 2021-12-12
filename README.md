@@ -8,6 +8,14 @@ I've separated the algorithm from the bot and made it open source so that it can
 
 ![Results](https://cdn.truewinter.dev/i/84003f.png)
 
+# Installation
+
+You can either install MinRand from npm, or by downloading the latest release from [GitHub](https://github.com/TrueWinter/MinRand).
+
+```sh
+npm install -S minrand
+```
+
 # Usage
 
 Using MinRand is simple.
@@ -52,6 +60,14 @@ If you don't need the key-value system, just assign a key that's used for all da
 
 For more information, check the [docs](https://minrand.truewinter.dev).
 
-## Important
+# Performance
+
+MinRand is slow compared to normal randomness. Even using a custom filtering algorithm, getting 100000 random values from MinRand takes around 477ms. Using `Math.random()` to get the same number of values takes 10ms.
+
+Due to this, you should only use MinRand where it is needed (see the important section below).
+
+You can test the speed yourself by running `tests/speed-test.js`.
+
+# Important
 
 MinRand is intended for use cases where perceived randomness (the lack of repeated datapoints) is desired. Due to it reducing the actual randomness, it should not be used for security purposes, or any other use cases where actual randomess is important.
