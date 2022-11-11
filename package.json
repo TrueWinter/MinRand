@@ -5,16 +5,17 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "create-docs": "jsdoc . -r -d docs --configure jsdoc.json"
+    "create-docs-windows": "create-docs.bat"
   },
   "repository": {
-	  "type": "git",
-	  "url": "https://github.com/TrueWinter/MinRand.git"
+    "type": "git",
+    "url": "https://github.com/TrueWinter/MinRand.git"
   },
   "author": "TrueWinter",
   "license": "MIT",
   "devDependencies": {
     "clean-jsdoc-theme": "^3.3.1",
+    "dwindle-js": "^0.0.6",
     "jest": "^27.4.3",
     "jsdoc": "^3.6.7"
   }
