@@ -4,9 +4,7 @@ MinRand was originally developed for a semi-private Twitch dad joke bot (yeah, I
 
 I've separated the algorithm from the bot and made it open source so that it can be used in other projects too.
 
-![Results](https://cdn.truewinter.net/i/22fbb5.png)
-
-![Results](https://cdn.truewinter.net/i/84003f.png)
+![Results](https://cdn.truewinter.net/i/ea098d.jpg)
 
 # Installation
 

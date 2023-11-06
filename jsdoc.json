@@ -1,7 +1,7 @@
 {
 	"source": {
         "includePattern": ".+\\.js(doc|x)?$",
-        "excludePattern": "((^|\\/|\\\\)_|node_modules|docs|tests)"
+        "excludePattern": "((^|\\/|\\\\)_|node_modules|docs|tests|research)"
     },
 	"opts": {
 		"encoding": "utf8",

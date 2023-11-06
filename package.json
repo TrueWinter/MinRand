@@ -14,9 +14,8 @@
   "author": "TrueWinter",
   "license": "MIT",
   "devDependencies": {
-    "clean-jsdoc-theme": "^3.3.1",
-    "dwindle-js": "^0.0.6",
+    "clean-jsdoc-theme": "^4.2.14",
     "jest": "^27.4.3",
-    "jsdoc": "^3.6.7"
+    "jsdoc": "^4.0.2"
   }
 }
