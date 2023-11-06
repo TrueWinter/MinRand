@@ -28,6 +28,7 @@ class MinRand {
 	/**
 	 * Returns the EventEmitter
 	 * @returns {EventEmitter} The EventEmitter
+	 * @see {@link MinRand#event:reset}
 	 */
 	getEventEmitter() {
 		return this.eventEmitter;
@@ -136,8 +137,8 @@ class MinRand {
 	 * Adds a used datapoint to a key
 	 * @param {*} key The key
 	 * @param {*} datapoint The datapoint to add
-	 * @throws {NotExistsError}
-	 * @throws {ExistsError}
+	 * @throws {NotExistsError} If the key does not exist or if the datapoint is not already in the dataset
+	 * @throws {ExistsError} If the datapoint already exists for the specified key
 	 */
 	addUsedDataPoint(key, datapoint) {
 		var _dataPoints = this.usedDataPoints.get(key);
